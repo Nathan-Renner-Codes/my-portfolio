@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #004d99; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: #ffcc00; /* Gold/Yellow for link */
+}
+
+#experience {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #004d99;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+/* --- Accordion Styles --- */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.active, .accordion:hover {
+    background-color: #ffcc00;
+    color: #004d99;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode for plus sign */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode for minus sign */
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-left: 3px solid #004d99;
+    margin-bottom: 15px;
+}
+
+.panel p {
+    padding: 5px 0;
+}
+
+/* Styles for other sections (Skills, Education) */
+#skills, #education {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
